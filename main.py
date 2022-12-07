@@ -89,4 +89,5 @@ bot.run(env["TOKEN"])
 """
 TODO:
     - Try to make on_ready print with colorama cause looks cool :)
+    - Complete this project and whip up the bot
 """
