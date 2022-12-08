@@ -5,11 +5,7 @@ import os
 import logging
 import platform
 
-from dotenv import load_dotenv
-from os import environ as env
-
-
-load_dotenv()
+token = os.getenv("TOKEN")
 
 intents = disnake.Intents.all()
 DEFAULTPREFIX = "ed"
@@ -22,7 +18,7 @@ bot = Bot(
     intents=intents,
 )
 
-bot.version = "1.0"
+bot.version = "2.0"
 
 bot.colors = {
     "AQUA": 0x1ABC9C,
@@ -83,7 +79,7 @@ async def on_message(message):
 
 bot.load_extensions("./ext")
 
-bot.run("ODg3OTA1MjQ2NDQ0MTMwMzY1.GOTvWe.dsl00Y7NMGu2-dA-CHp1hnAfMIpQzN8LUGE-5c")
+bot.run(token)
 
 """
 TODO:
