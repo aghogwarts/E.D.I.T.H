@@ -20,7 +20,6 @@ bot = Bot(
     owner_id=760426797418151937,
     help_command=None,
     intents=intents,
-    AllowedMentions=False,
 )
 
 bot.version = "1.0"
@@ -84,7 +83,7 @@ async def on_message(message):
 
 bot.load_extensions("./ext")
 
-bot.run(env["TOKEN"])
+bot.run("ODg3OTA1MjQ2NDQ0MTMwMzY1.GOTvWe.dsl00Y7NMGu2-dA-CHp1hnAfMIpQzN8LUGE-5c")
 
 """
 TODO:
