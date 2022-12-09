@@ -10,4 +10,4 @@ ENV TOKEN="ODg3OTA1MjQ2NDQ0MTMwMzY1.GOTvWe.dsl00Y7NMGu2-dA-CHp1hnAfMIpQzN8LUGE-5
 
 COPY . /app
 
-RUN ["python3", "/app/main.py"]
+CMD ["python3", "/app/main.py"]
