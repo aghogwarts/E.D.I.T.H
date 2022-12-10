@@ -37,7 +37,6 @@ logging.basicConfig(level=logging.INFO)
 
 @bot.event
 async def on_ready():
-
     # Collect stat data on firing up the bot and make it a global var
     global pythonVersion, disnakeVersion, serverCount, memberCount
     pythonVersion = platform.python_version()
@@ -47,7 +46,7 @@ async def on_ready():
 
     # On ready, print some details to standard out
     print(
-        f"\n\n{'='*30}\n\nReady to Deploy\n\n- Stats :\nCurrently in {serverCount} servers\nWatching over {memberCount} users\n\n- Running on :\nDisnake v{disnakeVersion}\nPython {pythonVersion}\n\n{'='*30}\n"
+        f"\n\n{'=' * 30}\n\nReady to Deploy\n\n- Stats :\nCurrently in {serverCount} servers\nWatching over {memberCount} users\n\n- Running on :\nDisnake v{disnakeVersion}\nPython {pythonVersion}\n\n{'=' * 30}\n"
     )
 
     # Change the bot's activity
@@ -61,7 +60,6 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-
     # Ignore messages sent by the bot
     if message.author.bot:
         return
