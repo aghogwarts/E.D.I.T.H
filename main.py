@@ -82,5 +82,5 @@ bot.run(token)
 """
 TODO:
     - Try to make on_ready print with colorama cause looks cool :)
-    - Complete this project and whip up the bot
+    - Complete this project
 """
